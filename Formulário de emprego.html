@@ -7,23 +7,31 @@
 
 <body>
     <form>
-        <h1>Formulário de Emprego aaaa</h1>
+        <h1>Formulário de Emprego </h1>
         <p><b>Descrição da Vaga e Requisitos</b></p>
         <p>Buscamos uma(um) assistente administrativo responsável por fornecer suporte a nossos gerentes e funcionários, auxiliar nas necessidades diárias de escritório e gerenciar as atividades administrativas gerais de nossa empresa. Para se candidatar, preecha o formulário a baixo: </p>
+
+        <fieldset>
+        <legend>Informações pessoais</legend>
         <div>
+            <br/>
             <label for="name"> Nome Completo: </label>
             <input type="text" id="name">
         </div>
         <div>
+            <br/>
             <label for="email"> Email: </label>
             <input type="email" id="email">
         </div>
         <div>
+            <br/>
             <label for="tel"> Telefone: </label>
             <input type="tel" id="tel">
         </div>
+        </fieldset>
+        <fieldset>
+        <legend>Nível de Experiencia</legend>
         <div class="campo">
-            <p><b>Nível de Experiencia:</b></p>
             
             <label for="low"> Baixo </label>
             <input type="radio" id="low" value="baixo" name="xp" >
@@ -33,10 +41,18 @@
 
             <label for="high"> Alto </label>
             <input type="radio" id="high" value="alto" name="xp" >
+
         </div>
-            <br/>
-            <label for="info"> Fale um pouco sobre você <br/> </label>
-            <textarea rows="5" type="radio" id="info"  name="info" ></textarea>
-    </form>        
+        </fieldset>
+        <fieldset>
+        <legend>Fale um pouco sobre você</legend>
+            <textarea rows="5" type="radio" id="info"  name="info" style="width: 30cm;"></textarea>
+        </fieldset>
+
+        <br/>
+        <button type="submit"> Enviar</button>
+
+    </form> 
+
 </body>
 </html> 
